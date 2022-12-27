@@ -9,7 +9,6 @@ import {
 import { useNavigate } from "react-router-dom";
 import { shades } from "../../theme";
 import { setIsCartOpen } from "../../state";
-import { height } from "@mui/system";
 
 const Navbar = () => {
   const navigate = useNavigate();
