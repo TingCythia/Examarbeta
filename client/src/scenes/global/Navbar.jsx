@@ -3,8 +3,8 @@ import { Badge, Box, IconButton } from "@mui/material";
 import {
   PersonOutlined,
   ShoppingBagOutlined,
-  MenuOutlined,
-  SearchOutlined,
+
+  
 } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import { shades } from "../../theme";
@@ -49,7 +49,7 @@ const Navbar = () => {
           zIndex="2"
         >
           <IconButton sx={{ color: "black" }}>
-            <SearchOutlined />
+           
           </IconButton>
           <IconButton sx={{ color: "black" }}>
             <PersonOutlined />
@@ -78,7 +78,7 @@ const Navbar = () => {
           </Badge>
 
           <IconButton sx={{ color: "black" }}>
-            <MenuOutlined />
+           
           </IconButton>
         </Box>
       </Box>
