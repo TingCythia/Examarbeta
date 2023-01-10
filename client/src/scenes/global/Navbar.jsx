@@ -3,7 +3,7 @@ import { Badge, Box, IconButton } from "@mui/material";
 import {
   PersonOutlined,
   ShoppingBagOutlined,
-
+  MenuOutlined,
   
 } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
@@ -40,20 +40,23 @@ const Navbar = () => {
           onClick={() => navigate("/")}
           sx={{ "&:hover": { cursor: "pointer" } }}
           color={shades.secondary[600]}
+          fontSize={[27]}
+          fontFamily={["serif"]}
         >
-          ANOSHE
+          ANOSHE 
         </Box>
         <Box
           display="flex"
           justifyContent="space-between"
           columnGap="20px"
           zIndex="2"
+      
         >
-          <IconButton sx={{ color: "black" }}>
+          <IconButton sx={{ color: "black"  }}>
            
           </IconButton>
           <IconButton sx={{ color: "black" }}>
-            <PersonOutlined /> 
+            <PersonOutlined  sx={{ fontSize: 27 }}/> 
           </IconButton>
 
           <Badge
@@ -74,12 +77,14 @@ const Navbar = () => {
               onClick={() => dispatch(setIsCartOpen({}))}
               sx={{ color: "black" }}
             >
-              <ShoppingBagOutlined />
+              <ShoppingBagOutlined  sx={{ fontSize: 27 }}/>
             </IconButton>
           </Badge>
 
           <IconButton sx={{ color: "black" }}>
-           
+         
+            <MenuOutlined sx={{ fontSize: 27 }} />
+         
           </IconButton>
         </Box>
       </Box>
