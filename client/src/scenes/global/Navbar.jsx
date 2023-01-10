@@ -20,8 +20,8 @@ const Navbar = () => {
       display="flex"
       alignItems="center"
       width="100%"
-      height="60px"
-      backgroundColor="rgba(255, 255, 255, 0.95)"
+      height="90px"
+      backgroundColor="#dcdada"
       color="black"
       position="fixed"
       top="0"
@@ -34,11 +34,12 @@ const Navbar = () => {
         display="flex"
         justifyContent="space-between"
         alignItems="center"
+      
       >
         <Box
           onClick={() => navigate("/")}
           sx={{ "&:hover": { cursor: "pointer" } }}
-          color={shades.secondary[500]}
+          color={shades.secondary[600]}
         >
           ANOSHE
         </Box>
@@ -52,7 +53,7 @@ const Navbar = () => {
            
           </IconButton>
           <IconButton sx={{ color: "black" }}>
-            <PersonOutlined />
+            <PersonOutlined /> 
           </IconButton>
 
           <Badge
